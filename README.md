@@ -39,9 +39,10 @@ Untuk melakukan running di environment lokal, dapat menjalankan setup environmen
 Download lib diatas dengan pip install -r requirements.txt
 ```
 Ketika sudah melakukan running app.py, kita perlu melakukan 
-'''
+
+```python
 streamlit run app.py
-'''
+```
 
 ## Conclusion
 Project ini bertujuan untuk uk mengatasi masalah tingginya angka dropout di Jaya Jaya Institut dengan mengembangkan solusi berbasis data. Melalui analisis data yang mendalam, berhasil diidentifikasi faktor-faktor kunci yang berkontribusi terhadap kecenderungan siswa untuk dropout. Selanjutnya, model machine learning telah dikembangkan untuk memprediksi siswa yang berisiko dropout dengan akurasi 92% tanpa adanya indikasi overfitting.
