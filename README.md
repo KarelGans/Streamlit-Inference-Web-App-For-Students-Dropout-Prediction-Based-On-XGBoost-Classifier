@@ -22,6 +22,21 @@ Proyek ini bertujuan untuk membantu Jaya Jaya Institut dalam mengatasi permasala
 Dataset student Jaya Jaya Institut dapat diakses melalui tautan berikut: [Dataset Mahasiswa Jaya Jaya Institut](*https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md*) 
 Setup environment untuk menjalankan jupyter notebook atau model:
 
+Buka cmd untuk setup virtual environment dengan
+
+```python
+# 1. Membuat virtual environment bernama 'venv'
+python -m venv venv
+
+# 2. Mengaktifkan virtual environment
+#    - Untuk pengguna Windows:
+.\venv\Scripts\activate
+
+#    - Untuk pengguna macOS atau Linux:
+source venv/bin/activate
+```
+Kemudian, install library yang dibutuhkan dengan cara
+
 ```python
 # requirements-ipynb.txt
 Download lib diatas dengan pip install -r requirements-ipynb.txt
@@ -34,6 +49,21 @@ Buisness dashboard dibuka melalui tautan : [Dashboard](*https://public.tableau.c
 Sistem inference machine learning dibuat di [Streamlit Cloud app](*https://dropout-prediction-based-on-xgboost-classifier.streamlit.app*)
 Untuk melakukan running di environment lokal, dapat menjalankan setup environment:
 
+Buka cmd untuk setup virtual environment dengan
+
+```python
+# 1. Membuat virtual environment bernama 'venv'
+python -m venv venv
+
+# 2. Mengaktifkan virtual environment
+#    - Untuk pengguna Windows:
+.\venv\Scripts\activate
+
+#    - Untuk pengguna macOS atau Linux:
+source venv/bin/activate
+```
+Kemudian install dependenciesnya
+
 ```python
 # requirements.txt
 Download lib diatas dengan pip install -r requirements.txt
@@ -45,7 +75,12 @@ streamlit run app.py
 ```
 
 ## Conclusion
-Project ini bertujuan untuk uk mengatasi masalah tingginya angka dropout di Jaya Jaya Institut dengan mengembangkan solusi berbasis data. Melalui analisis data yang mendalam, berhasil diidentifikasi faktor-faktor kunci yang berkontribusi terhadap kecenderungan siswa untuk dropout. Selanjutnya, model machine learning telah dikembangkan untuk memprediksi siswa yang berisiko dropout dengan akurasi 92% tanpa adanya indikasi overfitting.
+Project ini bertujuan untuk uk mengatasi masalah tingginya angka dropout di Jaya Jaya Institut dengan mengembangkan solusi berbasis data. Melalui analisis data yang mendalam, berhasil diidentifikasi faktor-faktor kunci yang berkontribusi terhadap kecenderungan siswa untuk dropout. Melalui hasil analisa, siswa-siswa yang dropout memiliki karakteristik sebagai berikut :
+- Nilai kurikulum baik pada semester 1 atau semester 2 yang rendah
+- Memiliki tuition fee menunggak
+- Cenderung lebih tua  
+
+Selanjutnya, model machine learning telah dikembangkan untuk memprediksi siswa yang berisiko dropout dengan akurasi 92% tanpa adanya indikasi overfitting.
 
 ### Rekomendasi Action Items
 Berikut merupakan action items dari hasil analisa yang dibuat.
